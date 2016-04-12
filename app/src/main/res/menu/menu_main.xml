@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ExerApp2="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/write_actionBar"
+        android:icon="@drawable/ic_action_write"
+        android:title="@string/menu_write"
+        ExerApp2:showAsAction="ifRoom"></item>
+</menu>
