@@ -13,9 +13,6 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
-/**
- * Created by 성훈 on 2016-04-04.
- */
 public class WriteActivity extends AppCompatActivity {
 
     private DatePickerDialog dialog;
@@ -42,8 +39,9 @@ public class WriteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_write);
 
         //actionBar back button
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        if(getSupportActionBar()!=null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         //dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         dateText = (TextView) findViewById(R.id.dateText);
         dialog = new DatePickerDialog(this, listener, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DATE));

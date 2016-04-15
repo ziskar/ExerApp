@@ -5,9 +5,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Created by 성훈 on 2016-03-26.
- */
 public class SplashActivity extends AppCompatActivity {
     static int endTime = 3000;
 

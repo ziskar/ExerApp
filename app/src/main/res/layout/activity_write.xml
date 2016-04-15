@@ -8,14 +8,37 @@
         android:id="@+id/dateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:ems="10"
-        android:hint="Touch"
-        android:onClick="dateDialog" />
+        android:hint="@string/Touch"
+        android:onClick="dateDialog"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker1"
+        android:layout_alignTop="@+id/dateText"
+        android:layout_toRightOf="@+id/dateText"
+        android:layout_toEndOf="@+id/dateText" />
 
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:layout_alignTop="@+id/numberPicker1"
+        android:layout_toRightOf="@+id/numberPicker1"
+        android:layout_toEndOf="@+id/numberPicker1" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:layout_alignTop="@+id/numberPicker2"
+        android:layout_toRightOf="@+id/numberPicker2"
+        android:layout_toEndOf="@+id/numberPicker2" />
 
 
 </RelativeLayout>
